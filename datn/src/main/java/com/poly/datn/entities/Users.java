@@ -51,4 +51,8 @@ public class Users {
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Address> addresses;
+
+    public Users(Integer id) {
+        this.id = id;
+    }
 }
