@@ -94,7 +94,7 @@ public class UsersService {
                     .map(address -> {
                         AddressDTO addressDTO = new AddressDTO();
                         addressDTO.setId(address.getId());
-                        addressDTO.setDescription(address.getDescription());  // Lấy thông tin mô tả địa chỉ
+                       
                         return addressDTO;
                     })
                     .collect(Collectors.toList());
